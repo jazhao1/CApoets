@@ -131,14 +131,14 @@
         1,
         null
       ],
-      "/home/ubuntu/workspace/master/app/models/create_tag.rb": [
-        1,
-        null,
-        null,
-        null
-      ],
       "/home/ubuntu/workspace/master/app/models/item_wrapper.rb": [
         1,
+        null
+      ],
+      "/home/ubuntu/workspace/master/app/models/tag.rb": [
+        1,
+        null,
+        null,
         null
       ],
       "/home/ubuntu/workspace/master/app/models/poem.rb": [
@@ -164,6 +164,6 @@
         null
       ]
     },
-    "timestamp": 1501036477
+    "timestamp": 1501037296
   }
 }
