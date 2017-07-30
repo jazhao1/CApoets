@@ -10,10 +10,10 @@
       
 
   %body
-   
-    = link_to image_tag("https://static.wixstatic.com/media/a0cfee_3825840911504adfac05ff6e22bf7b6c.jpg/v1/fill/w_198,h_134,al_c,q_80,usm_0.66_1.00_0.01/a0cfee_3825840911504adfac05ff6e22bf7b6c.webp", 
-    width: "280px", height: "189px", align: "left"),
-    'http://www.californiapoets.org/', :id => "CPITS_image", :target => "_blank"
+    .logo
+      = link_to image_tag("https://static.wixstatic.com/media/a0cfee_3825840911504adfac05ff6e22bf7b6c.jpg/v1/fill/w_198,h_134,al_c,q_80,usm_0.66_1.00_0.01/a0cfee_3825840911504adfac05ff6e22bf7b6c.webp", 
+      width: "280px", height: "189px", align: "left", border: "10px"),
+      'http://www.californiapoets.org/', :id => "CPITS_image", :target => "_blank"
 
     .donate_img
       = link_to image_tag("donate.png", align: "right"), "http://www.californiapoets.org/for-donors", :id => "Donate_image", :target => "_blank"
