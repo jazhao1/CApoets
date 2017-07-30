@@ -25,12 +25,19 @@ h1.title {
   top: 90px;
   background-color: transparent;
   color: black;
-  font-size: 30px;
+
   font-style: italic;
   text-align: center;
   vertical-align: baseline;
   font-weight: normal;
   font-family: georgia, palatino, "book antiqua", "palatino linotype", serif;
+  margin-top: 180px;
+  font-size: 42px;
+}
+
+
+.logo {
+  padding: 5px;
 }
 
 #CPITS_image {
@@ -39,6 +46,7 @@ h1.title {
   height: 107px;
   object-fit: cover;
   display: inline;
+  
 }
 
 .redirect_link {
@@ -51,11 +59,8 @@ h1.title {
 }
 
 #poems_container{
-  margin-top: 80px;
   height: 900px;
   width: 900px;
-  margin-left: auto;
-  margin-right: auto;
   display: -webkit-flex;
   display: flex;
   align-items: center;
@@ -63,7 +68,9 @@ h1.title {
   -webkit-flex-direction: row;
   flex-direction: row;
   -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
+  margin: 220px auto 100px auto;
+
 }
 
 .poems_box:hover {
@@ -94,34 +101,41 @@ h1.title {
   height: 260px;
   width: 260px;
   background: #7fccf7;
-  border: white;
-  border-style: solid;
+  border-radius: 15px;
+  -webkit-box-shadow: -2px 1px 17px -1px rgba(0,0,0,0.13);
+  -moz-box-shadow: -2px 1px 17px -1px rgba(0,0,0,0.13);
+  box-shadow: -2px 1px 17px -1px rgba(0,0,0,0.13);
+  margin: 10px;
 }
 
 .poems_title {
+  margin-top: 11px;
   width: 97%;
   text-align: left;
   position: relative;
   left: 15px;
   color: white;
+  font-size: 28px;
+
 }
 
 .poems_text {
-  text-align: right;
+  text-align: center;
   height: 6em;
   overflow: hidden;
   line-height: 1.5em;
-  margin-left: 45%;
+  /*margin-left: 45%;*/
   position: relative;
-  margin-top: 25px;
+  margin: 20px;
   color: #3899ec;
   font-family: georgia, palatino, "book antiqua", "palatino linotype", serif;
-  font-size: 23px;
+  font-size: 19px;
   font-style: italic;
 }
 
 .author_name {
-  bottom: 55px;
+  bottom: 12px;
+  /*margin-bottom: 15px;*/
   font-size: 20px;
   left: 20px;
   position: absolute;
