@@ -40,6 +40,9 @@ h1 {
   font-family: Georgia, serif
 }
 
+h4 {
+  margin-top: 35px;
+}
 .newpoem_form {
   background: #ffffff;
   -webkit-border-radius: 3px;
@@ -144,7 +147,8 @@ h1 {
   background: #fcd307;
   text-align: center;
   line-height: 60px;
-  padding:3px 30px;
+  padding: 20px 30px;
+  border-radius: 10px;
 } 
 
 .newpoem_form .header h1 {
@@ -182,6 +186,7 @@ form label.header {
   text-transform: uppercase;
   cursor: pointer;
   transition: .3s ease-out;
+  border-radius: 6px;
 }
 
 .info {
