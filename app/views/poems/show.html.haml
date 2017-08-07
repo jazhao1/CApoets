@@ -42,7 +42,7 @@
           = @poem.teacher_name
         %ol
           Teacher: 
-          = @poem.student_teacher_name
+          = link_to @poem.teacher_name, teacher_profile_poem_path(@poem.id)
         %ol
           School: 
           = @poem.school

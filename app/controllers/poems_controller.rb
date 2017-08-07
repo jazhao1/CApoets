@@ -70,11 +70,13 @@ class PoemsController < ApplicationController
     end
     
     def teacher_profile
+        require 'mechanize'
+        require 'nokogiri'
+        
         @poem = Poem.find(params[:id])
-        link = @poem.teacher_profile_link
-        if not link.nil?
-            redirect_to link
-        else
+        @page = @poem.teacher_profile_link
+
+        if @page.nil?
             flash[:notice] = "Teacher does not exist"
             redirect_to authenticated_root_url
         end

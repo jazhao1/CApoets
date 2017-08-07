@@ -30,14 +30,14 @@ class Poem < ActiveRecord::Base
         
             names = self.teacher_name.split(" ")
             first_name = names[0]
-            last_name = names[1]
+            last_name = names.last
             form["Value1_1"] = last_name
             form["Value2_1"] = first_name
             page = agent.submit(form)
         
             if link = page.link_with(:text => "View Details")
                 page2 = link.click
-                return page2.uri.to_s
+                return page2
             end
         end
     end

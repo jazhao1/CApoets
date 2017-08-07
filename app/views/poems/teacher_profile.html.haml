@@ -1,0 +1,53 @@
+%html
+  %head
+    %title 
+    = stylesheet_link_tag 'teacherProfile'
+    = csrf_meta_tags
+.body
+  .container
+    .header
+      %h2 
+        = @poem.teacher_name
+    .content
+      .info
+        .profile_pic
+          %ol
+            = image_tag (@page.at('.cbFormData img').attributes["src"]), width: "300px"
+        .personal_info
+          %ol
+            Last Name:
+            = @page.at(".cbFormTableEvenRow has(td[text()='Name Last'])").parent.at('span').text
+          %ol
+            First Name:
+            = @page.at(".cbFormTableRow has(td[text()='Name First'])").parent.at('span').text
+          %ol
+            Title:
+            = @page.at(".cbFormTableEvenRow has(td[text()='Title'])").parent.at('span').text
+          %ol
+            Email:
+            = @page.at(".cbFormTableRow has(td[text()='Email'])").parent.at('span').text
+          %ol
+            City:
+            = @page.at(".cbFormTableEvenRow has(td[text()='City'])").parent.at('span').text
+          %ol
+            County:
+            = @page.at(".cbFormTableRow has(td[text()='County'])").parent.at('span').text
+          %ol
+            State:
+            = @page.at(".cbFormTableEvenRow has(td[text()='State'])").parent.at('span').text
+          %ol
+            Zip:
+            = @page.at(".cbFormTableRow has(td[text()='Zip'])").parent.at('span').text
+            
+        .other_info
+          %ol
+            %h3
+              Bio
+            %p
+              = @page.at(".cbFormTableEvenRow has(td[text()='Bio'])").parent.at('span').text
+          %ol
+            %h3
+              Sample Poem
+            = @page.at(".cbFormTableEvenRow has(td[text()='Sample poem'])").parent.at('span').text
+          %ol
+            = button_to "Go Back", '#', :onclick => 'history.back(); return false;'
