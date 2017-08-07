@@ -70,6 +70,7 @@ gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
 gem 'cancancan'
 
+gem 'acts-as-taggable-on'
 source 'https://rails-assets.org' do
   gem 'rails-assets-chosen'
 end

@@ -1,11 +1,15 @@
 html, body {
   margin: 0;
-  padding: 0;
+  padding-top: 0;
   background: White;
   color: DarkSlateGrey;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-  font-size: 10pt;
+  /*font-size: 10pt; inherit from admindash for nav bar uniformity*/
   max-width: 100%;
+}
+
+body{
+  
 }
 
 div#main {
@@ -35,7 +39,6 @@ h1.title {
   font-size: 42px;
 }
 
-
 .logo {
   padding: 5px;
 }
@@ -46,16 +49,14 @@ h1.title {
   height: 107px;
   object-fit: cover;
   display: inline;
-  
 }
 
 .redirect_link {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: -100px;
+  /*display: flex;*/
+  /*justify-content: flex-end;*/
   font-size: 14px;
   font-family: helvetica-w01-bold, helvetica-w02-bold, helvetica-lt-w10-bold, sans-serif;
-  margin-right: 25%;
+  text-align: center;
 }
 
 #poems_container{
@@ -172,4 +173,5 @@ h1.title {
   flex-direction: column-reverse;
   font-family: georgia, palatino, "book antiqua", "palatino linotype", serif;
   font-style: italic;
+  padding-bottom: 20px;
 }

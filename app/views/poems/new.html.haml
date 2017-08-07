@@ -125,11 +125,8 @@
 
           .form-row
             .input-group
-              = label :poem, :title, "Choose Existing Tags"
-              = select :poem, 'list_of_tags', %w(Spring Summer Fall Winter Rain Halloween Snow Holidays Love Family Imagination School Memory)
-              %p * Please choose one or more tags that categorize the poem, and create new ones below if the existing ones do not match.
               = label :poem, :title, 'Create Poem Tags'
-              = text_field :poem, 'list_of_tags', :class => "entry_box", :id=> "poem_tags", :type => 'text', :placeholder => 'ex: Love, Seasons, Ode', :err => 'Poem Tags'
+              = text_field :poem, 'tag_list', :class => "entry_box", :id=> "poem_tags", :type => 'text', :placeholder => 'ex: Love, Seasons, Ode', :err => 'Poem Tags'
           .form-row
             .input-group
               = label :poem, :poem, 'Poem'

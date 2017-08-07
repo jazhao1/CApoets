@@ -4,7 +4,6 @@ class CreateTags < ActiveRecord::Migration
       t.string :name
       t.string :status
       t.integer :popularity
-      t.integer :taggings_count
       t.datetime :created_at
       t.datetime :updated_at
 

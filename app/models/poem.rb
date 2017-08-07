@@ -2,7 +2,18 @@ class Poem < ActiveRecord::Base
     has_many :tags
     mount_uploader :attachment, AttachmentUploader # Tells rails to use this uploader for this model.
     mount_uploader :release, ReleaseUploader
-    validates :attachment, :teacher_name, :county, :email, :student_name, :school, :grade, :student_teacher_name, :title, :list_of_tags, :release, presence: true # Make sure the owner's name is present.
+    validates :attachment, :teacher_name, :county, :email, :student_name, :school, :grade, :student_teacher_name, :title, :tag_list, :release, presence: true # Make sure the owner's name is present.
+    #acts_as_taggable
+    acts_as_taggable_on :tags
+
+    # trying to override tag saving    
+    # def find_or_create_tags_from_list_with_context(tag_list, context)
+    #     for tag in tag_list:
+    #         new_tag = Tag.new(:name => tag, :status => "Pending")
+    #         new_tag.s
+    #     end
+    # end
+    
     
     def pending?
         return true if self.status == 'Pending'

@@ -1,6 +1,6 @@
 class AddDefaultValueToStatusAttribute < ActiveRecord::Migration
   def up
-  change_column :poems, :status, :string, :default => "Pending"
+    change_column :poems, :status, :string, :default => "Pending"
   end
 
   def down

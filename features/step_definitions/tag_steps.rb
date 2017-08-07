@@ -21,6 +21,7 @@ Given /I am a user on the new poem page who wants to tag a poem called "(.*)"/ d
     click_button "Log in"
     
     #visit new_tag_path
+    sign_in(:user, User.all.first)
     visit view_tags_path
     # @tag = FactoryGirl.create(:Tag, category: "temp", status: "pending", number_of_hits: "1")
 end

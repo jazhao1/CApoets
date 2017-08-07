@@ -14,8 +14,8 @@
 // = require jquery
 // = require jquery_ujs
 // = require turbolinks
-// = require chosen
 // = require_tree .
+// = require chosen
 
 $(document).ready(function() {
 	$('ul.tabs li').click(function() {

@@ -14,6 +14,7 @@ class ApplicationController < ActionController::Base
     else
       view_poems_path
     end
+
   end
   
   def page_not_found

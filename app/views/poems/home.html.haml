@@ -3,7 +3,8 @@
   
   %head
     %title California Poets Submitted Poems
-    = stylesheet_link_tag 'home'
+    = stylesheet_link_tag "home"
+    = stylesheet_link_tag "admindash"
     = javascript_include_tag 'home'
     = csrf_meta_tags
   // , margin: "10" align: "left"
@@ -29,9 +30,11 @@
         %span.author_name=poem.student_name
         
   %span.ending_line
-    Help us reach more students
-  %span.ending_line
-    One line can change a life
+    %span
+      Help us continue our program
+    %span
+      One line can change a life
+
   = will_paginate @poems, inner_window: 2, outer_window: 2
   .redirect_link 
     = link_to 'Back to California Poets', 'http://www.californiapoets.org/'

@@ -1,5 +1,5 @@
 body {
-  padding-top: 64px;
+  margin-top: 0;
   background: #fff;
   font-size: 12px;
   font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
@@ -13,6 +13,7 @@ h1 {
 	padding: 20px;
 	text-align: center;
   color: #3d9be9;
+  margin: 0 0;
 }
 
 .container{
@@ -80,6 +81,23 @@ th, td {
   height: 70px;
 }
 
+nav-wrapper{
+  height: 64px;
+}
+
+img.right{
+  margin-left: 10;
+}
+
+.message{
+    text-align:center;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20 20;
+    font-weight: bold;
+    color: #3d9be9;
+    font-size: 20px;
+}
+
 .heading-button-container {
   position: static;
 }
@@ -130,8 +148,4 @@ th, td {
 
 .small-btn:hover {
   background-color: #c7e2f9;
-}
-
-nav-wrapper{
-  height: 64px;
 }

@@ -1,12 +1,12 @@
 body{
-    padding-top:64px;
+    padding-top: 64px;
 }
 
 #new_user {
     text-align: center;
     margin: 0 auto;
     width: 50% !important;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'zOpen Sans', sans-serif;
     margin-bottom: 3%;
 }
 
@@ -39,18 +39,8 @@ nav {
     
 }
 
-.message{
-    text-align:center;
-    font-family: 'Open Sans', sans-serif;
-    padding: 10 10;
-    font-weight: bold;
-    color: #3d9be9;
-    font-size: 20px;
-}
-
 #reg-option-container {
-   position: absolute;
-   width: 100%;
+    width: 100%;
    
 }
 

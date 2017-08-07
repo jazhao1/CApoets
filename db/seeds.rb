@@ -39,3 +39,9 @@ end
         })
     tag.save!(validate: false)
 end
+
+# Make login user
+user = User.new
+user.email = 'test@test.com'
+user.password = '123456'
+user.save!

@@ -34,9 +34,11 @@
 						%h5 Create Tags
 						%p Enter a tag or a list of tags in the input box below. Capitalize the first letter, and separate each tag by a comma and a space.
 						// = label :poem, :poem, 'Poem'
-						= text_area :tag, 'tag_list', :class => "entry_box", :id => "tag_entry", :placeholder => 'e.g. Love, Seasons, Ode', :class=> "form-control"
+						= text_area :tag, 'new_tag_list', :class => "entry_box", :id => "tag_entry", :placeholder => 'e.g. Love, Seasons, Ode', :class=> "form-control"
 				%footer.footer
 					= submit_tag 'Submit Tag(s)', :id => "tag-button", :class=>"button"
+				%footer.footer
+					= Poem.first.tag_list.length
 		#tab-1.tab-content
 			%table#poems
 				%thead

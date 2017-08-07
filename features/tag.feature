@@ -5,8 +5,8 @@ Feature: Writers tag subject matter
     I wanted to add a tagging feature
   
 Scenario: I wrote a new poem and I want to tag a poem called "poem1"
-Given I am a user on the new poem page who wants to tag a poem called "poem1"
-Then I can see a button on the poem page labeled "All Tags"
-Then I can see a button on the poem page labeled "Pending Approval"
-Then I can create a new tag called "something"
+  Given I am a user on the new poem page who wants to tag a poem called "poem1"
+  Then I can see a button on the poem page labeled "All Tags"
+  Then I can see a button on the poem page labeled "Pending Approval"
+  Then I can create a new tag called "something"
 
