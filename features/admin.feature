@@ -26,4 +26,4 @@ Then I should see a "Approve" button
 Scenario: I am viewing Poem 1's Poet_teacher's profile page
   Then I should see link to profile: "Ronald Alexander"
   When I click "Ronald Alexander"
-  Then I should see "Ron's work has won awards at various writers conferences and local competitions"
+  Then I should see "Ron Alexander’s writing has won awards at the SB Writing Conference and other venues and a short film of his poem Zebra is in release to LGBTQ film festivals."
