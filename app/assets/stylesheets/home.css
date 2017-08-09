@@ -4,7 +4,6 @@ html, body {
   background: White;
   color: DarkSlateGrey;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-  /*font-size: 10pt; inherit from admindash for nav bar uniformity*/
   max-width: 100%;
 }
 
@@ -64,7 +63,7 @@ h1.title {
   width: 900px;
   display: -webkit-flex;
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
   -webkit-justify-content: center;
   -webkit-flex-direction: row;
   flex-direction: row;
@@ -99,8 +98,8 @@ h1.title {
 .poems_box {
   position: relative;
   justify-content: space-between;
-  height: 260px;
-  width: 260px;
+  height: 320px;
+  width: 270px;
   background: #7fccf7;
   border-radius: 15px;
   -webkit-box-shadow: -2px 1px 17px -1px rgba(0,0,0,0.13);
@@ -110,11 +109,9 @@ h1.title {
 }
 
 .poems_title {
-  margin-top: 11px;
+  padding: 7%;
   width: 97%;
   text-align: left;
-  position: relative;
-  left: 15px;
   color: white;
   font-size: 28px;
 
@@ -173,5 +170,5 @@ h1.title {
   flex-direction: column-reverse;
   font-family: georgia, palatino, "book antiqua", "palatino linotype", serif;
   font-style: italic;
-  padding-bottom: 20px;
+  padding: 55px 0px 20px 0px;
 }

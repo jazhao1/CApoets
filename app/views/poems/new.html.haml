@@ -8,7 +8,7 @@
   = form_tag poems_path, :class => "newpoem_form", :multipart => true do
     %header.header
       = link_to image_tag("https://static.wixstatic.com/media/a0cfee_3825840911504adfac05ff6e22bf7b6c.jpg/v1/fill/w_198,h_134,al_c,q_80,usm_0.66_1.00_0.01/a0cfee_3825840911504adfac05ff6e22bf7b6c.webp",
-      ), '/', :id => "CPITS_image"   
+      ), '/', :class => "CPITS_image"   
       %h2 Submit a poem
     .content
       .form
@@ -50,82 +50,83 @@
               = label :poem, :title, 'Poem Title'
               = text_field :poem, 'title', :class => "entry_box", :id=> "poem_title", :type => 'text', :placeholder => 'ex: The Road Not Taken', :err => 'Poem Title'
           / Dropdown Trigger
-          %a.dropdown-button.btn{"data-activates" => "dropdown1"} Poem tags
+          // %a.dropdown-button.btn{"data-activates" => "dropdown1"} Poem tags
           / Dropdown Structure
-          %ul#dropdown1.dropdown-content
-            %li
-              %a{:href => "#!"} Spring
-            %li
-              %a{:href => "#!"} Summer
-            %li.divider
-            %li
-              %a{:href => "#!"} Fall
-            %li
-              %a{:href => "#!"} Winter
-            %li
-              %a{:href => "#!"} Rain
-            %li
-              %a{:href => "#!"} Halloween
-            %li
-              %a{:href => "#!"} Snow
-            %li
-              %a{:href => "#!"} Holidays
-            %li
-              %a{:href => "#!"} Love
-            %li
-              %a{:href => "#!"} Family
-            %li
-              %a{:href => "#!"} Elementary School
-            %li
-              %a{:href => "#!"} Jr High
-            %li
-              %a{:href => "#!"} High School                                          
-            %li
-              %a{:href => "#!"} Imagination
-            %li
-              %a{:href => "#!"} Image
-            %li
-              %a{:href => "#!"} Shape
-            %li
-              %a{:href => "#!"} Sound
-            %li
-              %a{:href => "#!"} Chants and Rhythm
-            %li
-              %a{:href => "#!"} Senses
-            %li
-              %a{:href => "#!"} Personification
-            %li
-              %a{:href => "#!"} Hyperbole
-            %li
-              %a{:href => "#!"} Juxtaposition
-            %li
-              %a{:href => "#!"} Onomatopoeia
-            %li
-              %a{:href => "#!"} Tanka
-            %li
-              %a{:href => "#!"} Memory
-            %li
-              %a{:href => "#!"} Sapphic Modernism
-            %li
-              %a{:href => "#!"} Muse
-            %li
-              %a{:href => "#!"} Superlatives
-            %li
-              %a{:href => "#!"} Metaphor/Simile
-            %li
-              %a{:href => "#!"} Sestinas
-            %li
-              %a{:href => "#!"} Ode
-            %li
-              %a{:href => "#!"} Ekphrasis
-            %li
-              %a{:href => "#!"} Riddles
+          // %ul#dropdown1.dropdown-content
+          //   %li
+          //     %a{:href => "#!"} Spring
+          //   %li
+          //     %a{:href => "#!"} Summer
+          //   %li.divider
+          //   %li
+          //     %a{:href => "#!"} Fall
+          //   %li
+          //     %a{:href => "#!"} Winter
+          //   %li
+          //     %a{:href => "#!"} Rain
+          //   %li
+          //     %a{:href => "#!"} Halloween
+          //   %li
+          //     %a{:href => "#!"} Snow
+          //   %li
+          //     %a{:href => "#!"} Holidays
+          //   %li
+          //     %a{:href => "#!"} Love
+          //   %li
+          //     %a{:href => "#!"} Family
+          //   %li
+          //     %a{:href => "#!"} Elementary School
+          //   %li
+          //     %a{:href => "#!"} Jr High
+          //   %li
+          //     %a{:href => "#!"} High School                                          
+          //   %li
+          //     %a{:href => "#!"} Imagination
+          //   %li
+          //     %a{:href => "#!"} Image
+          //   %li
+          //     %a{:href => "#!"} Shape
+          //   %li
+          //     %a{:href => "#!"} Sound
+          //   %li
+          //     %a{:href => "#!"} Chants and Rhythm
+          //   %li
+          //     %a{:href => "#!"} Senses
+          //   %li
+          //     %a{:href => "#!"} Personification
+          //   %li
+          //     %a{:href => "#!"} Hyperbole
+          //   %li
+          //     %a{:href => "#!"} Juxtaposition
+          //   %li
+          //     %a{:href => "#!"} Onomatopoeia
+          //   %li
+          //     %a{:href => "#!"} Tanka
+          //   %li
+          //     %a{:href => "#!"} Memory
+          //   %li
+          //     %a{:href => "#!"} Sapphic Modernism
+          //   %li
+          //     %a{:href => "#!"} Muse
+          //   %li
+          //     %a{:href => "#!"} Superlatives
+          //   %li
+          //     %a{:href => "#!"} Metaphor/Simile
+          //   %li
+          //     %a{:href => "#!"} Sestinas
+          //   %li
+          //     %a{:href => "#!"} Ode
+          //   %li
+          //     %a{:href => "#!"} Ekphrasis
+          //   %li
+          //     %a{:href => "#!"} Riddles
 
           %p
 
           .form-row
             .input-group
               = label :poem, :title, 'Create Poem Tags'
+              %p * Please separate tags by commas.
               = text_field :poem, 'tag_list', :class => "entry_box", :id=> "poem_tags", :type => 'text', :placeholder => 'ex: Love, Seasons, Ode', :err => 'Poem Tags'
           .form-row
             .input-group

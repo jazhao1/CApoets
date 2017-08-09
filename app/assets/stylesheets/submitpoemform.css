@@ -16,12 +16,14 @@ textarea .form-control{
   resize: vertical;
 } 
 
-img {
-  display: block;
-  max-height:6.5rem;
+.CPITS_image {
+  /*display: block;*/
+  /*max-height:6.5rem;*/
   box-shadow: 2px 2px 10px #888888;
   float: left;
   top: 0;
+  min-height: -5%;
+  /*height: auto;*/
 }
 
 
@@ -40,6 +42,11 @@ h1 {
   font-family: Georgia, serif
 }
 
+h2 {
+    text-align: center;
+    padding-left: 38%;
+}
+
 h4 {
   margin-top: 35px;
 }
@@ -54,7 +61,6 @@ h4 {
   overflow: hidden;
   border-radius: 10px;
   padding: 30px;
-  margin-top: 23%;
 }
 
 .newpoem_form .form .form-row {
@@ -150,6 +156,7 @@ h4 {
   line-height: 60px;
   padding: 20px 30px;
   border-radius: 10px;
+  min-height: 25%;
 } 
 
 .newpoem_form .header h1 {
