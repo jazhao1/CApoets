@@ -25,7 +25,7 @@ Rails.application.routes.draw do
   
     get 'poems/submitted/', to: 'poems#submitted'
 
-    resources :poems, except: [:index] do
+    resources :poems, except: [:index, :show] do
       member do
         post 'approve'
         post 'reject'
@@ -42,6 +42,7 @@ Rails.application.routes.draw do
   
   unauthenticated :user do
    get '/poems/', to: 'poems#home'
+   resources :poems, only: [:show]
   end
 
   if Rails.env.production?
