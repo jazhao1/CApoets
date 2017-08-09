@@ -14,8 +14,8 @@
 *Heroku Link*
 http://capoets.herokuapp.com
 
-*Heroku Development Link*
-http://afternoon-plains-14539.herokuapp.com/
+*Heroku Development Link Summer 2017*
+https://cpits.herokuapp.com/
 
 *Pivotal Tracker Link*
 https://www.pivotaltracker.com/n/projects/2071017
