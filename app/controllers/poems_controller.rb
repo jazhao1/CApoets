@@ -33,6 +33,17 @@ class PoemsController < ApplicationController
                 end
             end
         end
+        @tag_display = ''
+        @tag_objects.each do |tag|
+            # @tag_display << tag.name
+            if (@tag_display == '' && tag.status == "Approved")
+                @tag_display << tag.name
+            elsif tag.status == "Approved"
+                @tag_display << ', ' << tag.name 
+            end
+                
+        end
+            
     end
     
     def new

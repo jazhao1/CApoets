@@ -44,6 +44,10 @@
     .content
       .main
         = simple_format(@poem.poem)
+      .tags
+        %ol 
+          Tags:
+          = @tag_display
       .info
         %ol
           Poet Teacher: 
