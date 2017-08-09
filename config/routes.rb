@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+
   resources :tags, except: [:index] do
     authenticated :user do
       post 'approve'
