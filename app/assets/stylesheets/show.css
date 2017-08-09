@@ -40,34 +40,35 @@
   font: 23px/1.4em arial;
 }
 
+.tags {
+  font-size: 20px;
+  padding: 10px 0px 0px 10%;
+  color: navy;
+  text-align: left;
+}
 .info{
   width: 100%; 
-  padding: 20px;
   text-align: left;
-  margin-top: 1%;
   margin-left: 10%;
   margin-bottom: 80px;
   line-height: 10px;
-  position: absolute
+  /*position: absolute*/
   
 }
 
 .content .main {
-  width: 60%;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
+  width: 80%;
+  padding: 5px 20px;
   text-align: left;
-  margin: 70px auto 20px auto;
+  margin: 60px auto 20px auto;
   color: white;
   background: #4DC1FF;
   box-shadow: 2px 2px 10px #888888;
   border-radius: 10px;
   line-height: 120%;
-  font-size: 1.4vw;
+  font-size: 1.2vw;
   min-height: 30%;
-  min-width: 70%;
+  min-width: 50%;
   font: 14px/1.4em helvetica-w01-bold,helvetica-w02-bold,
 }
 
