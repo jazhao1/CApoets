@@ -67,7 +67,7 @@ gem 'nokogiri'
 gem 'mechanize', '2.7.5'
 
 gem 'remotipart', github: 'mshibuya/remotipart'
-gem 'rails_admin', '>= 1.0.0.rc'
+gem 'rails_admin', '>= 1.2'
 gem 'cancancan'
 
 gem 'acts-as-taggable-on'

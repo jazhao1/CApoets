@@ -57,13 +57,6 @@ class PoemsController < ApplicationController
         @poem = Poem.new(poem_params)
         if @poem.save
             #create tags
-            for tag in @poem.tag_list
-                new_tag = Tag.new(:name => tag, :status => "Pending")
-                puts new_tag
-                if not new_tag.save
-                    flash[:warning] += tag + " was not formatted correctly"
-                end
-            end
             Notifier.notify(@poem.teacher_name).deliver_later
             redirect_to poems_submitted_path
         else

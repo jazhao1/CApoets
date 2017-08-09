@@ -377,7 +377,7 @@ DEPENDENCIES
   rails (= 4.2.5)
   rails-assets-chosen!
   rails_12factor
-  rails_admin (>= 1.0.0.rc)
+  rails_admin (>= 1.2)
   remotipart!
   rspec-rails (= 3.4.2)
   sass-rails (~> 5.0)

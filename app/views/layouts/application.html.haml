@@ -22,7 +22,7 @@
           -if not current_user.nil?
             %li= link_to 'Submit a Poem', new_poem_path
           -if current_user.nil?
-            %li= link_to 'Log In / Sign up', admin_path
+            %li= link_to 'Log In / Sign up', login_path
           -else
             %li= link_to 'Log Out', destroy_user_session_path, :method=>'delete'
     #main
