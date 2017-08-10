@@ -30,6 +30,7 @@
               %td= tag.status
               - if tag.status == "Approved"
                 %td= button_to( "Reject", tag_reject_path(tag.id))
+                %td
               - if tag.status == "Rejected"
                 %td= button_to( "Revive", tag_approve_path(tag.id))
                 %td
