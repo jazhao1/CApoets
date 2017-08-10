@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-	padding: 20px;
+	padding: 60px 20px;
 	text-align: center;
   color: #3d9be9;
   margin: 0 0;
@@ -22,8 +22,8 @@ h1 {
 }
 
 ul.tabs{
-
-	margin: 0px;
+  
+	margin: 2% 0px 0px 0px;
 	padding: 0px;
 	list-style: none;
 }
@@ -59,6 +59,7 @@ ul.tabs li a:focus, .active {
 	display: none;
 	background: #EAEAEA;
 	padding: 15px 15px 35px;
+	box-shadow: 2px 2px 10px #888888;
 }
 
 table {
@@ -145,11 +146,14 @@ img.right{
   background-color: #ffffff;
 }
 
-
 .small-btn:hover {
   background-color: #c7e2f9;
 }
 
 .footer{
   margin-top: 10px;
+}
+
+#tag-button {
+   color: #039be5;
 }

@@ -8,7 +8,7 @@
   = form_tag poems_path, :class => "newpoem_form", :multipart => true do
     %header.header
       = link_to image_tag("https://static.wixstatic.com/media/a0cfee_3825840911504adfac05ff6e22bf7b6c.jpg/v1/fill/w_198,h_134,al_c,q_80,usm_0.66_1.00_0.01/a0cfee_3825840911504adfac05ff6e22bf7b6c.webp",
-      ), '/', :id => "CPITS_image"   
+      ), '/', :class => "CPITS_image"   
       %h2 Submit a poem
     .content
       .form
@@ -133,8 +133,6 @@
           .form-row
             .input-group
               = label :poem, :title, 'Create Poem Tags'
-              // = text_field :poem, 'tag_list', :class => "entry_box", :id=> "poem_tags", :type => 'text', :placeholder => 'ex: Love, Seasons, Ode', :err => 'Poem Tags'
-              // = collection_select :poem, :tag_ids, Tag.order(:name), :id, :name, {}, {multiple: true}, 
               = autocomplete_field :poem, :tag_list, autocomplete_tag_name_poems_path, 'data-delimiter' => ', ', :multiple => true
           .form-row
             .input-group

@@ -43,17 +43,21 @@
               = label :poem, :title, 'Create Poem Tags'
               = autocomplete_field :poem, :tag_list, autocomplete_tag_name_poems_path, 'data-delimiter' => ', ', :multiple => true, :value => ""
           %footer.footer
-            = submit_tag 'Submit Tag(s)', :id => "tag-button", :class=>"button"
+            = submit_tag 'Submit Tag(s)', :id => "tag-button", :class=>"button btn white"
     .content
       .main
         = simple_format(@poem.poem)
+      .tags
+        %ol 
+          Tags:
+          = @tag_display
       .info
         %ol
           Poet Teacher: 
-          = @poem.teacher_name
+          = link_to @poem.teacher_name, teacher_profile_poem_path(@poem.id)
         %ol
           Teacher: 
-          = link_to @poem.teacher_name, teacher_profile_poem_path(@poem.id)
+          = @poem.student_teacher_name
         %ol
           School: 
           = @poem.school
