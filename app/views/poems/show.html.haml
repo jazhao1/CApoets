@@ -29,14 +29,14 @@
               %td= tag.name
               %td= tag.status
               - if tag.status == "Approved"
-                %td= button_to( "Reject", tag_reject_path(tag.id))
+                %td= button_to( "Reject", tag_reject_path(tag.id), :class => "btn small-btn white poem-tag")
                 %td
               - if tag.status == "Rejected"
-                %td= button_to( "Revive", tag_approve_path(tag.id))
+                %td= button_to( "Revive", tag_approve_path(tag.id), :class => "btn small-btn white poem-tag")
                 %td
               - if tag.status == "Pending"
-                %td= button_to( "Approve", tag_approve_path(tag.id))
-                %td= button_to( "Reject", tag_reject_path(tag.id))
+                %td= button_to( "Approve", tag_approve_path(tag.id), :class => "btn small-btn white poem-tag")
+                %td= button_to( "Reject", tag_reject_path(tag.id), :class => "btn small-btn white poem-tag")
       .container
         = form_tag tags_path(:id => @poem.id), :class => "newtag_form", :multipart => true do
           .form-row

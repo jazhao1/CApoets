@@ -36,10 +36,6 @@ nav {
   background-color: #c7e2f9 !important;
 }
 
-.btn{
-    
-}
-
 #reg-option-container {
     width: 100%;
    
@@ -55,10 +51,28 @@ nav {
     padding: 0 0 10px;
 }
 
-/*#logo {*/
-/*    top: 20%;*/
-/*}*/
 
 nav ul a {
     padding: 1px 15px !important;
+}
+
+#tag-button {
+   color: #039be5;
+}
+
+.small-btn {
+  height: 24px;
+  line-height: 24px;
+  padding: 0 0.5rem;
+  color: #039be5;
+  font-size: 13px;
+  background-color: #ffffff;
+}
+
+.small-btn:hover {
+  background-color: #c7e2f9;
+}
+
+.poem-tag {
+  color: #039be5;
 }
