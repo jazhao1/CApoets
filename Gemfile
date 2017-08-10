@@ -75,3 +75,4 @@ gem 'acts-as-taggable-on'
 source 'https://rails-assets.org' do
   gem 'rails-assets-chosen'
 end
+gem 'rails3-jquery-autocomplete'

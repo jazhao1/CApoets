@@ -31,4 +31,10 @@
       - elsif flash[:warning]
         #warning.message= flash[:warning]
       = yield
-  %script
+  :javascript
+    $(document).on('ready page:load', function () {
+      $('#product_tag_ids').chosen({
+        allow_single_deselect: true,
+        width: '100%'
+      })
+    });

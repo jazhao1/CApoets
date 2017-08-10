@@ -1,8 +1,9 @@
 class PoemsController < ApplicationController
     skip_before_filter :authenticate_user!
+    autocomplete :tag, :name, :full => true, :class_name => 'ActsAsTaggableOn::Tag'
     
     def poem_params
-        params.require(:poem).permit(:teacher_name, :county, :email, :student_name, :school, :grade, :student_teacher_name, :title, :tag_list, :attachment, :poem, :release)
+        params.require(:poem).permit(:teacher_name, :county, :email, :student_name, :school, :grade, :student_teacher_name, :title, :attachment, :poem, :release, :tag_list, :tag, { tag_list: [] }, :tag_ids)
     end
     
     def index
@@ -36,7 +37,7 @@ class PoemsController < ApplicationController
     end
     
     def new
-        
+        @poems = Poem.all
     end
     
     def approve 
@@ -54,6 +55,9 @@ class PoemsController < ApplicationController
     end
     
     def create
+        puts "doing something \n\n\n"
+        puts poem_params[:tag_list]
+        puts poem_params
         @poem = Poem.new(poem_params)
         if @poem.save
             #create tags
