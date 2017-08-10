@@ -25,7 +25,7 @@
           -if not current_user.nil?
             %li= link_to 'Submit a Poem', new_poem_path
           -if current_user.nil?
-            %li= link_to 'Log In / Sign up', admin_path
+            %li= link_to 'Log In / Sign up', login_path
           -else
             %li= link_to 'Log Out', destroy_user_session_path, :method=>'delete'
     #main
@@ -34,4 +34,10 @@
       - elsif flash[:warning]
         #warning.message= flash[:warning]
       = yield
-  %script
+  :javascript
+    $(document).on('ready page:load', function () {
+      $('#product_tag_ids').chosen({
+        allow_single_deselect: true,
+        width: '100%'
+      })
+    });

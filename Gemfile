@@ -67,10 +67,12 @@ gem 'nokogiri'
 gem 'mechanize', '2.7.5'
 
 gem 'remotipart', github: 'mshibuya/remotipart'
-gem 'rails_admin', '>= 1.0.0.rc'
+gem 'rails_admin', '>= 1.2'
 gem 'cancancan'
+gem 'rails_admin_rollincode', '~> 1.0'
 
 gem 'acts-as-taggable-on'
 source 'https://rails-assets.org' do
   gem 'rails-assets-chosen'
 end
+gem 'rails3-jquery-autocomplete'

@@ -36,9 +36,7 @@
 						// = label :poem, :poem, 'Poem'
 						= text_area :tag, 'new_tag_list', :class => "entry_box", :id => "tag_entry", :placeholder => 'e.g. Love, Seasons, Ode', :class=> "form-control"
 				%footer.footer
-					= submit_tag 'Submit Tag(s)', :id => "tag-button", :class=>"button btn white"
-				%footer.footer
-					= Poem.first.tag_list.length
+					= submit_tag 'Submit Tag(s)', :id => "tag-button", :class=>"btn white poem-tag"
 		#tab-1.tab-content
 			%table#poems
 				%thead

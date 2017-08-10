@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   
   resources :tags, except: [:index] do
     authenticated :user do
@@ -10,8 +11,8 @@ Rails.application.routes.draw do
   
   get '/home/', to: 'poems#home'
 
-  get '/admin/', to: 'admin#index'
-  
+  get '/login/', to: 'admin#index'
+
   devise_for :users, controllers: {
     sessions: 'users/sessions',
     passwords: 'users/passwords',
@@ -25,7 +26,7 @@ Rails.application.routes.draw do
   
     get 'poems/submitted/', to: 'poems#submitted'
 
-    resources :poems, except: [:index] do
+    resources :poems, except: [:index, :show] do
       member do
         post 'approve'
         post 'reject'
@@ -42,8 +43,14 @@ Rails.application.routes.draw do
   
   unauthenticated :user do
    get '/poems/', to: 'poems#home'
+   resources :poems, only: [:show]
   end
 
+  #autocomplete
+  resources :poems do
+    get :autocomplete_tag_name, :on => :collection
+  end
+  
   if Rails.env.production?
      get '404', :to => 'application#page_not_found'
   end

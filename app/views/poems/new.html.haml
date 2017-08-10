@@ -1,5 +1,5 @@
 = stylesheet_link_tag "submitpoemform"
-
+= javascript_include_tag "autocomplete-rails.js"
 
 .container
   .info
@@ -122,12 +122,18 @@
           //     %a{:href => "#!"} Riddles
 
           %p
-
+          .form-row
+            .input-group
+              //= collection_select :Tag, Tag.all, :id, :name, {}, {multiple: true}
+              // = autocomplete_field :tag_list, autocomplete_tag_name_poems_path
+              // = autocomplete_field :tag_list, :as => :autocomplete, :source_query => autocomplete_tag_name_poems_path
+              // =collection_select :tag_list, label: "Tags, enter as a comma separated list", url: autocomplete_tag_name_poems_path, as: :autocomplete, input_html: {'data-delimiter' => ','}
+            // - form_for @poems do |f|
+            //   f.autocomplete_field :tag_list, autocomplete_brand_name_products_path, 'data-auto-focus' => true
           .form-row
             .input-group
               = label :poem, :title, 'Create Poem Tags'
-              %p * Please separate tags by commas.
-              = text_field :poem, 'tag_list', :class => "entry_box", :id=> "poem_tags", :type => 'text', :placeholder => 'ex: Love, Seasons, Ode', :err => 'Poem Tags'
+              = autocomplete_field :poem, :tag_list, autocomplete_tag_name_poems_path, 'data-delimiter' => ', ', :multiple => true
           .form-row
             .input-group
               = label :poem, :poem, 'Poem'
