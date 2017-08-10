@@ -15,30 +15,33 @@
         = @poem.student_name
         , Grade
         = @poem.grade
-    %table#tag-table
-      %thead
-        %tr
-          %th Tags
-          %th Status
-          %th Actions
-      %tbody
-        - @tag_objects.each do |tag|
+    -if not current_user.nil?
+      %table#tag-table
+        %thead
           %tr
-            %td= tag.name
-            %td= tag.status
-            - if tag.status == "Approved"
-              %td= button_to( "Reject", tag_reject_path(tag.id))
-            - if tag.status == "Rejected"
-              %td= button_to( "Revive", tag_approve_path(tag.id))
-            - if tag.status == "Pending"
-              %td= button_to( "Approve", tag_approve_path(tag.id))
-              %td= button_to( "Reject", tag_reject_path(tag.id))
-    .container
-      = form_tag tags_path(:id => @poem.id), :class => "newtag_form", :multipart => true do
-        .form-row
-          .input-group
-            %h5 Add Tags
-            = text_area :tag, 'new_tag_list', :class => "entry_box", :id => "tag_entry", :placeholder => 'e.g. Love, Seasons, Ode', :class=> "form-control"
+            %th Tags
+            %th Status
+            %th Actions
+            %th
+        %tbody
+          - @tag_objects.each do |tag|
+            %tr
+              %td= tag.name
+              %td= tag.status
+              - if tag.status == "Approved"
+                %td= button_to( "Reject", tag_reject_path(tag.id))
+              - if tag.status == "Rejected"
+                %td= button_to( "Revive", tag_approve_path(tag.id))
+                %td
+              - if tag.status == "Pending"
+                %td= button_to( "Approve", tag_approve_path(tag.id))
+                %td= button_to( "Reject", tag_reject_path(tag.id))
+      .container
+        = form_tag tags_path(:id => @poem.id), :class => "newtag_form", :multipart => true do
+          .form-row
+            .input-group
+              = label :poem, :title, 'Create Poem Tags'
+              = autocomplete_field :poem, :tag_list, autocomplete_tag_name_poems_path, 'data-delimiter' => ', ', :multiple => true, :value => ""
           %footer.footer
             = submit_tag 'Submit Tag(s)', :id => "tag-button", :class=>"button"
     .content

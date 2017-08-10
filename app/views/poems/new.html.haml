@@ -135,7 +135,7 @@
               = label :poem, :title, 'Create Poem Tags'
               // = text_field :poem, 'tag_list', :class => "entry_box", :id=> "poem_tags", :type => 'text', :placeholder => 'ex: Love, Seasons, Ode', :err => 'Poem Tags'
               // = collection_select :poem, :tag_ids, Tag.order(:name), :id, :name, {}, {multiple: true}, 
-              = autocomplete_field :poem, :tag_list, autocomplete_tag_name_poems_path, :type => 'text', :placeholder => 'ex: Love, Seasons, Ode', :err => 'Poem Tags'
+              = autocomplete_field :poem, :tag_list, autocomplete_tag_name_poems_path, 'data-delimiter' => ', ', :multiple => true
           .form-row
             .input-group
               = label :poem, :poem, 'Poem'

@@ -55,9 +55,6 @@ class PoemsController < ApplicationController
     end
     
     def create
-        puts "doing something \n\n\n"
-        puts poem_params[:tag_list]
-        puts poem_params
         @poem = Poem.new(poem_params)
         if @poem.save
             #create tags
@@ -66,7 +63,7 @@ class PoemsController < ApplicationController
         else
             flash.now[:warning] = "Please fill in Missing Fields."
             render new_poem_path
-        end   
+        end
     end
     
     def home

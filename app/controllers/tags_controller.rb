@@ -27,23 +27,21 @@ class TagsController < ApplicationController
         #revive function
         if tag[:status].to_s == "Rejected"
             tag.update_attributes(:status => "Pending")
-            #if not from admin tag page, but from poems show page
-            # if current_page?(controller: 'poems', action: 'show')
-            #     redirect_back(fallback_location: fallback_location)
-            # else
-            #     redirect_to view_tags_url
-            # end
-            redirect_to view_tags_url
+            if params[:tag_id]
+                session[:return_to] ||= request.referer
+                redirect_to session.delete(:return_to)
+            else
+                redirect_to view_tags_url
+            end
         else
             tag.update_attributes(:status => "Approved")
             flash[:notice] = "You successfully approved this tag."
-            #if not from admin tag page, but from poems show page
-            # if current_page?(controller: 'poems', action: 'show')
-            #     redirect_back(fallback_location: fallback_location)
-            # else
-            #     redirect_to view_tags_url
-            # end
-            redirect_to view_tags_url
+            if params[:tag_id]
+                session[:return_to] ||= request.referer
+                redirect_to session.delete(:return_to)
+            else
+                redirect_to view_tags_url
+            end
         end
     end
     
@@ -51,12 +49,18 @@ class TagsController < ApplicationController
         tag = Tag.find(params[:tag_id])
         tag.update_attributes(:status => "Rejected")
         flash[:notice] = "You successfully rejected this tag."
-        redirect_to view_tags_url
+        if params[:tag_id]
+            session[:return_to] ||= request.referer
+            redirect_to session.delete(:return_to)
+        else
+            redirect_to view_tags_url
+        end
     end
     
     def create
         if params[:id]
-            tag_array = params[:tag][:new_tag_list].split(/[\s,]+/)
+            #tag_array = params[:tag][:new_tag_list].split(/[\s,]+/)
+            tag_array = params[:poem][:tag_list].split(/[\s,]+/)
             @poem = Poem.find(params[:id])
         else
             tags = tag_params
@@ -87,7 +91,6 @@ class TagsController < ApplicationController
                 @poem.tag_list.add(tag, parse: true)
                 @poem.save!
             elsif not new_tag.save
-                puts new_tag.status
                 flash[:warning] = "Please fix formatting."
                 render view_tags_path
             end

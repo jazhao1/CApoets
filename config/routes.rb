@@ -51,7 +51,6 @@ Rails.application.routes.draw do
     get :autocomplete_tag_name, :on => :collection
   end
   
-  
   if Rails.env.production?
      get '404', :to => 'application#page_not_found'
   end

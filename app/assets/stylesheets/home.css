@@ -60,11 +60,11 @@ h1.title {
 }
 
 #poems_container{
-  height: 900px;
-  width: 900px;
+  height: 100%;
+  width: 100%;
   display: -webkit-flex;
   display: flex;
-  align-items: center;
+  /*align-items: center; places boxes in center vertically*/
   -webkit-justify-content: center;
   -webkit-flex-direction: row;
   flex-direction: row;
