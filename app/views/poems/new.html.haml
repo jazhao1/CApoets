@@ -7,9 +7,9 @@
     %span
   = form_tag poems_path, :class => "newpoem_form", :multipart => true do
     %header.header
-      = link_to image_tag("https://static.wixstatic.com/media/a0cfee_3825840911504adfac05ff6e22bf7b6c.jpg/v1/fill/w_198,h_134,al_c,q_80,usm_0.66_1.00_0.01/a0cfee_3825840911504adfac05ff6e22bf7b6c.webp",
-      ), '/', :class => "CPITS_image"   
-      %h2 Submit a poem
+      // = link_to image_tag("https://static.wixstatic.com/media/a0cfee_3825840911504adfac05ff6e22bf7b6c.jpg/v1/fill/w_198,h_134,al_c,q_80,usm_0.66_1.00_0.01/a0cfee_3825840911504adfac05ff6e22bf7b6c.webp",
+      // ), '/', :class => "CPITS_image"   
+      %h2 Submit a Poem
     .content
       .form
         %h4 Poet-Teacher Information
@@ -121,15 +121,6 @@
           //   %li
           //     %a{:href => "#!"} Riddles
 
-          %p
-          .form-row
-            .input-group
-              //= collection_select :Tag, Tag.all, :id, :name, {}, {multiple: true}
-              // = autocomplete_field :tag_list, autocomplete_tag_name_poems_path
-              // = autocomplete_field :tag_list, :as => :autocomplete, :source_query => autocomplete_tag_name_poems_path
-              // =collection_select :tag_list, label: "Tags, enter as a comma separated list", url: autocomplete_tag_name_poems_path, as: :autocomplete, input_html: {'data-delimiter' => ','}
-            // - form_for @poems do |f|
-            //   f.autocomplete_field :tag_list, autocomplete_brand_name_products_path, 'data-auto-focus' => true
           .form-row
             .input-group
               = label :poem, :title, 'Create Poem Tags'

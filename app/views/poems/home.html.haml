@@ -11,17 +11,20 @@
       
 
   %body
-    .logo
-      = link_to image_tag("https://static.wixstatic.com/media/a0cfee_3825840911504adfac05ff6e22bf7b6c.jpg/v1/fill/w_198,h_134,al_c,q_80,usm_0.66_1.00_0.01/a0cfee_3825840911504adfac05ff6e22bf7b6c.webp", 
-      width: "280px", height: "189px", align: "left", border: "10px"),
-      'http://www.californiapoets.org/', :id => "CPITS_image", :target => "_blank"
+    // .logo
+    //   = link_to image_tag("https://static.wixstatic.com/media/a0cfee_3825840911504adfac05ff6e22bf7b6c.jpg/v1/fill/w_198,h_134,al_c,q_80,usm_0.66_1.00_0.01/a0cfee_3825840911504adfac05ff6e22bf7b6c.webp", 
+    //   width: "280px", height: "189px", align: "left", border: "10px"),
+    //   'http://www.californiapoets.org/', :id => "CPITS_image", :target => "_blank"
 
-    .donate_img
-      = link_to image_tag("donate.png", align: "right"), "http://www.californiapoets.org/for-donors", :id => "Donate_image", :target => "_blank"
+    // .donate_img
+    //   = link_to image_tag("donate.png", align: "right"), "http://www.californiapoets.org/for-donors", :id => "Donate_image", :target => "_blank"
     
     %h1.title Fresh poems from our students across California
     #main
-
+    
+    .sort-by
+      Sort By: Recent
+    
   %poems_container{:id => "poems_container"}
     - @poems.each do |poem|
       .poems_box{:id => "poem#{poem.id}"}
@@ -34,6 +37,8 @@
       Help us continue our program
     %span
       One line can change a life
+  .donate_img
+    = link_to image_tag("donate.png", align: "center"), "http://www.californiapoets.org/for-donors", :id => "Donate_image", :target => "_blank"
 
   = will_paginate @poems, inner_window: 2, outer_window: 2
   .redirect_link 

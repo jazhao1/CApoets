@@ -11,14 +11,20 @@
   %body
     %nav
       .nav-wrapper
-        .brand-logo.right
-          %a{:href => "http://www.californiapoets.org/"}
-            // California Poets in the Schools
-            // %img.right{:src => "https://orig13.deviantart.net/02c5/f/2017/220/0/1/transparentlogo_by_zeolch-dbjcvki.png", :style => "width: 93px; height: auto;"}
-            = link_to image_tag("https://orig13.deviantart.net/02c5/f/2017/220/0/1/transparentlogo_by_zeolch-dbjcvki.png", 
-             width: "93px", height: "auto"),"http://www.californiapoets.org/", :target => "_blank"
+        // .brand-logo.right
+        //   %a{:href => "http://www.californiapoets.org/"}
+        //     // California Poets in the Schools
+        //     // %img.right{:src => "https://orig13.deviantart.net/02c5/f/2017/220/0/1/transparentlogo_by_zeolch-dbjcvki.png", :style => "width: 93px; height: auto;"}
+        //     = link_to image_tag("https://orig13.deviantart.net/02c5/f/2017/220/0/1/transparentlogo_by_zeolch-dbjcvki.png", 
+        //     width: "93px", height: "auto"),"http://www.californiapoets.org/", :target => "_blank"
 
         %ul#nav-mobile.left
+          %li 
+            %a{:href => "http://www.californiapoets.org/"}
+              // California Poets in the Schools
+              // %img.right{:src => "https://orig13.deviantart.net/02c5/f/2017/220/0/1/transparentlogo_by_zeolch-dbjcvki.png", :style => "width: 93px; height: auto;"}
+              = link_to image_tag("https://orig13.deviantart.net/02c5/f/2017/220/0/1/transparentlogo_by_zeolch-dbjcvki.png", 
+               width: "93px", height: "auto"),"http://www.californiapoets.org/", :target => "_blank", :id => "logo"
           %li= link_to 'Home', root_path, :method=>'get'
           -if not current_user.nil?
             %li= link_to 'Admin', view_poems_path
