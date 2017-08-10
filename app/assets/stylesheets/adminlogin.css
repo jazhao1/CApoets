@@ -11,6 +11,7 @@ body{
 }
 
 a {
+	/*position: relative;*/
 	text-align: center;
 	/*display: block;*/
 }
@@ -52,4 +53,12 @@ nav {
     margin-right: auto;
     text-align: center;
     padding: 0 0 10px;
+}
+
+/*#logo {*/
+/*    top: 20%;*/
+/*}*/
+
+nav ul a {
+    padding: 1px 15px !important;
 }

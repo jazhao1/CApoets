@@ -44,7 +44,10 @@ h1 {
 
 h2 {
     text-align: center;
-    padding-left: 38%;
+    /*padding-left: 38%;*/
+    font-size: 60;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
 }
 
 h4 {

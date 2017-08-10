@@ -25,17 +25,18 @@ h1 {
 
 h1.title {
   position: absolute;
-  top: 90px;
+  /*top: 4%;*/
   background-color: transparent;
   color: black;
 
   font-style: italic;
   text-align: center;
   vertical-align: baseline;
-  font-weight: normal;
-  font-family: georgia, palatino, "book antiqua", "palatino linotype", serif;
-  margin-top: 180px;
-  font-size: 42px;
+  font-weight: 400;
+  font-family: 'Asap Condensed', sans-serif;
+  /*font-family: georgia, palatino, "book antiqua", "palatino linotype", serif;*/
+  margin-top: 3%;
+  font-size: 50px;
 }
 
 .logo {
@@ -69,7 +70,7 @@ h1.title {
   flex-direction: row;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 220px auto 100px auto;
+  margin: 220px auto 50px auto;
 
 }
 
@@ -155,8 +156,9 @@ h1.title {
 }
 
 .donate_img {
-  align: right;
+  /*align: middle;*/
   padding: 1%;
+  /*length: 100%;*/
 }
 
 .pagination {
@@ -170,5 +172,12 @@ h1.title {
   flex-direction: column-reverse;
   font-family: georgia, palatino, "book antiqua", "palatino linotype", serif;
   font-style: italic;
-  padding: 55px 0px 20px 0px;
+  padding: 55px 0px 5px 0px;
+}
+
+.sort-by {
+  position: relative;
+  top: 190px;
+  font-size: 18;
+  font-family: 'Roboto', sans-serif;
 }
