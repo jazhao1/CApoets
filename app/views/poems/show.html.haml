@@ -40,7 +40,7 @@
             %h5 Add Tags
             = text_area :tag, 'new_tag_list', :class => "entry_box", :id => "tag_entry", :placeholder => 'e.g. Love, Seasons, Ode', :class=> "form-control"
           %footer.footer
-            = submit_tag 'Submit Tag(s)', :id => "tag-button", :class=>"button"
+            = submit_tag 'Submit Tag(s)', :id => "tag-button", :class=>"button btn white"
     .content
       .main
         = simple_format(@poem.poem)

@@ -36,7 +36,7 @@
 						// = label :poem, :poem, 'Poem'
 						= text_area :tag, 'new_tag_list', :class => "entry_box", :id => "tag_entry", :placeholder => 'e.g. Love, Seasons, Ode', :class=> "form-control"
 				%footer.footer
-					= submit_tag 'Submit Tag(s)', :id => "tag-button", :class=>"button"
+					= submit_tag 'Submit Tag(s)', :id => "tag-button", :class=>"button btn white"
 				%footer.footer
 					= Poem.first.tag_list.length
 		#tab-1.tab-content
@@ -50,8 +50,8 @@
 						- if tag.status == "Pending"
 							%tr
 								%td= tag.name
-								%td= button_to( "Approve", tag_approve_path(tag.id))
-								%td= button_to( "Reject", tag_reject_path(tag.id))
+								%td= button_to( "Approve", tag_approve_path(tag.id), :class => "btn small-btn")
+								%td= button_to( "Reject", tag_reject_path(tag.id), :class => "btn small-btn")
 		#tab-2.tab-content
 			%table#poems
 				%thead
@@ -74,7 +74,7 @@
 						- if tag.status == "Approved"
 							%tr
 								%td= tag.name
-								%td= button_to( "Reject", tag_reject_path(tag.id))
+								%td= button_to( "Reject", tag_reject_path(tag.id), :class => "btn small-btn")
 		#tab-4.tab-content
 			%table#poems
 				%thead
@@ -86,7 +86,7 @@
 						- if tag.status == "Rejected"
 							%tr
 								%td= tag.name
-								%td= button_to( "Revive", tag_approve_path(tag.id))
+								%td= button_to( "Revive", tag_approve_path(tag.id), :class => "btn small-btn")
 					
 %script
 	document.getElementById("current").click();
