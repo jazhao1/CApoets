@@ -11,6 +11,7 @@ body{
 }
 
 a {
+	/*position: relative;*/
 	text-align: center;
 	/*display: block;*/
 }
@@ -35,10 +36,6 @@ nav {
   background-color: #c7e2f9 !important;
 }
 
-.btn{
-    
-}
-
 #reg-option-container {
     width: 100%;
    
@@ -52,6 +49,11 @@ nav {
     margin-right: auto;
     text-align: center;
     padding: 0 0 10px;
+}
+
+
+nav ul a {
+    padding: 1px 15px;
 }
 
 #tag-button {
