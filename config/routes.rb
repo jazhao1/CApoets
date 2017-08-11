@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   end
   
   get '/home/', to: 'poems#home'
-
+  get '/form/', to: 'poems#new'
   get '/login/', to: 'admin#index'
 
   devise_for :users, controllers: {
@@ -20,12 +20,15 @@ Rails.application.routes.draw do
   }
     
   authenticated :user do
+    # get '/poems/new' to 'poems#new', as :new_poems
     get '/poems/', to:'poems#index', as: :view_poems
     
     get '/tags', to: 'tags#index', as: :view_tags
   
     get 'poems/submitted/', to: 'poems#submitted'
 
+    # get 'poems/new/', to: "poems#new"
+    
     resources :poems, except: [:index, :show] do
       member do
         post 'approve'

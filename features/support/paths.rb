@@ -15,7 +15,8 @@ module NavigationHelpers
     when /^the admin home page$/
       authenticated_root_path
     when /^new poem$/
-      new_poem_path
+      form_path
+      # 'poems/new'
     when /^Admin$/
       admin_path
     when /^Log in$/
@@ -26,6 +27,7 @@ module NavigationHelpers
       root_path
     when /^gallery$/
       root_path
+    
       
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
