@@ -14,6 +14,10 @@ Given(/^I am a user on the "([^"]*)" page who wants to "([^"]*)"$/) do |page_nam
   visit path_to(page_name)
 end
 
+Given(/^I login$/) do 
+  visit path_to(new_poem_path)
+end
+
 Then(/^I should see input boxes labeled with the following: "([^"]*)"$/) do |list_of_boxes|
   box_list = list_of_boxes.split(", ")
   box_list.each do |box|
