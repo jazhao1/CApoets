@@ -1,17 +1,12 @@
 {
   "Cucumber Features": {
     "coverage": {
-<<<<<<< HEAD
-      "/home/ubuntu/workspace/CApoets/app/models/user.rb": [
-=======
       "/Users/peitian/CS169/CApoets/app/models/user.rb": [
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
         1,
         null,
         null,
         1,
         null,
-<<<<<<< HEAD
         null,
         1,
         1,
@@ -20,114 +15,14 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/CApoets/app/models/poem.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-=======
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-<<<<<<< HEAD
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        null,
-=======
-        1,
-        4,
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
-        null,
-        null,
-        null
-      ],
-<<<<<<< HEAD
-      "/home/ubuntu/workspace/CApoets/app/mailers/notifier.rb": [
-        1,
-        1,
-        null,
-        1,
-        2,
-        2,
-        2,
-        null,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/CApoets/app/mailers/application_mailer.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        4,
-        4,
-        null,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/CApoets/app/controllers/poems_controller.rb": [
-        1,
-=======
       "/Users/peitian/CS169/CApoets/app/models/poem.rb": [
         1,
         1,
         1,
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
         1,
         1,
         null,
         1,
-<<<<<<< HEAD
-        3,
-        null,
-        null,
-        1,
-        3,
-=======
         null,
         null,
         null,
@@ -141,7 +36,6 @@
         1,
         0,
         0,
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
         null,
         null,
         1,
@@ -153,22 +47,16 @@
         0,
         0,
         null,
-<<<<<<< HEAD
-=======
         null,
         1,
         0,
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
         0,
         null,
         0,
         0,
         null,
         0,
-<<<<<<< HEAD
-=======
         null,
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
         0,
         0,
         0,
@@ -182,18 +70,6 @@
         null,
         null,
         null,
-<<<<<<< HEAD
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        0,
-        null,
-        null,
-        null,
-=======
         null
       ],
       "/Users/peitian/CS169/CApoets/app/mailers/notifier.rb": [
@@ -212,7 +88,6 @@
         1,
         1,
         1,
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
         null,
         1,
         4,
@@ -223,9 +98,6 @@
       ],
       "/Users/peitian/CS169/CApoets/app/mailers/user_mailer.rb": [
         1,
-<<<<<<< HEAD
-        6,
-=======
         null
       ],
       "/Users/peitian/CS169/CApoets/app/controllers/users/sessions_controller.rb": [
@@ -244,7 +116,6 @@
         null,
         null,
         null,
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
         null,
         null,
         null,
@@ -262,53 +133,26 @@
         null,
         1,
         null,
-<<<<<<< HEAD
-        null,
-        1,
-        3,
-        3,
-        null,
-        0,
-        0,
-=======
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
-        null,
-        3,
-        3,
         null,
         null,
         1,
         1,
         null,
         1,
-<<<<<<< HEAD
-        6,
-=======
         3,
         3,
         null,
         0,
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
         null,
         null,
         null,
         null,
         1,
-<<<<<<< HEAD
-        0,
-        0,
-        null,
-        0,
-        0,
-=======
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
         null,
         null,
         null,
         null,
         0,
-        0,
-        null,
         null,
         null,
         1,
@@ -319,12 +163,6 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/home/ubuntu/workspace/CApoets/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-=======
       "/Users/peitian/CS169/CApoets/app/helpers/application_helper.rb": [
         1,
         null
@@ -334,33 +172,15 @@
         null
       ],
       "/Users/peitian/CS169/CApoets/app/controllers/poems_controller.rb": [
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
         1,
-        null,
-        null,
-        null,
         1,
         1,
         null,
         1,
-<<<<<<< HEAD
-        3,
-        3,
-        null,
-=======
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
         0,
         null,
         null,
-        null,
-        null,
         1,
-<<<<<<< HEAD
-        null,
-        null,
-        null,
-        null,
-=======
         3,
         null,
         null,
@@ -368,19 +188,12 @@
         5,
         5,
         0,
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
         0,
         null,
         0,
         0,
         0,
         null,
-<<<<<<< HEAD
-        1,
-        26,
-        26,
-        26,
-=======
         0,
         0,
         0,
@@ -388,7 +201,6 @@
         0,
         0,
         0,
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
         null,
         0,
         null,
@@ -396,55 +208,14 @@
         null,
         null,
         null,
-<<<<<<< HEAD
-        null
-      ],
-      "/home/ubuntu/workspace/CApoets/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/CApoets/app/helpers/tags_helper.rb": [
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/CApoets/app/mailers/user_mailer.rb": [
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/CApoets/app/controllers/users/sessions_controller.rb": [
-        1,
-=======
         0,
         0,
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
         null,
+        0,
+        0,
         null,
+        0,
         null,
-<<<<<<< HEAD
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/CApoets/app/controllers/users/registrations_controller.rb": [
-=======
         null,
         null,
         null,
@@ -480,27 +251,20 @@
         null,
         null,
         null,
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
         1,
         6,
         null,
         null,
-<<<<<<< HEAD
-=======
         1,
         0,
         0,
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
         null,
         0,
         0,
         null,
-<<<<<<< HEAD
-=======
         0,
         0,
         0,
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
         null,
         null,
         null,
@@ -522,7 +286,6 @@
         null,
         null,
         null,
-<<<<<<< HEAD
         null,
         null,
         null,
@@ -558,131 +321,6 @@
         null,
         null,
         null,
-        null,
-        null,
-        null,
-        null
-      ]
-    },
-    "timestamp": 1502434407
-  },
-  "RSpec": {
-    "coverage": {
-      "/home/ubuntu/workspace/CApoets/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/CApoets/app/helpers/tags_helper.rb": [
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/CApoets/app/controllers/tags_controller.rb": [
-        1,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-=======
-        null,
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-<<<<<<< HEAD
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-=======
-        null,
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
-        null,
-        0,
-        null,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-<<<<<<< HEAD
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
-        null,
-        0,
-        0,
-        null,
-        0,
-        0,
-=======
-        null,
-        null,
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-<<<<<<< HEAD
-        0,
-        0,
-        0,
-=======
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
-        null,
-        0,
         null,
         null,
         null,
@@ -694,157 +332,14 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/home/ubuntu/workspace/CApoets/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        1,
-        0,
-        0,
-        null,
-        0,
-        null,
-        null,
-        null,
-        null,
-=======
       "/Users/peitian/CS169/CApoets/app/controllers/admin_controller.rb": [
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
-        1,
-        null,
-        null,
-        null,
-        null,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/CApoets/app/mailers/notifier.rb": [
-        1,
-<<<<<<< HEAD
-        1,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/CApoets/app/mailers/application_mailer.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/CApoets/app/mailers/user_mailer.rb": [
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/CApoets/app/models/item_wrapper.rb": [
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/CApoets/app/models/tag.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        0,
-        null,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/CApoets/app/models/poem.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         1,
         1,
         0,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        null,
-        null,
-=======
-        0,
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
         null,
         null
       ]
     },
-<<<<<<< HEAD
-    "timestamp": 1502429028
-=======
     "timestamp": 1502430662
->>>>>>> f90d88bba9ae445e596856615a7bcf5e01f928a6
   }
 }
