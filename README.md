@@ -20,6 +20,8 @@ https://cpits.herokuapp.com/
 *Pivotal Tracker Link*
 https://www.pivotaltracker.com/n/projects/2071017
 
+*Documentation*
+https://docs.google.com/document/d/1kFYdalgM-SAKqYHCLHiPYued9zeSA7R3DK3NdusRLVk/edit?usp=sharing
 
 This project will extend functionality for an existing website (CaliforniaPoets.org),
 a non-profit organization for poet teachers and students. 
