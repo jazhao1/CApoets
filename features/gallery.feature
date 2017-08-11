@@ -5,21 +5,22 @@ Feature: Public audience viewing poems in a gallery
 
 Background: 
   Given the following poems exist: 
-  | teacher_name     | county | email   | student_name | grade | student_teacher_name | poem |school  | title         | status   | tag_list |
-  | a                | a      | a@a.com | a            | K     | a                    | a    | a      | PendingPoem1  | Pending  | sunny    |
-  | Ronald Alexander | a      | a@a.com | a            | K     | a                    | po   | b      | ApprovedPoem1 | Approved | sunny    |
-  | a                | a      | a@a.com | a            | K     | a                    | a    | a      | RejectedPoem1 | Rejected | sunny    |
-  | a                | a      | a@a.com | a            | K     | a                    | a    | a      | PendingPoem2  | Pending  | sunny    |
-  | Michelle Bitting | a      | a@a.com | a            | K     | a                    | ta   | a      | ApprovedPoem2 | Approved | sunny    |
-  | a                | a      | a@a.com | a            | K     | a                    | a    | a      | RejectedPoem2 | Rejected | sunny    |
-  | a                | a      | a@a.com | a            | K     | a                    | a    | a      | PendingPoem3  | Pending  | sunny    |
-  | a                | a      | a@a.com | a            | K     | a                    | to   | a      | ApprovedPoem3 | Approved | sunny    |
-  | a                | a      | a@a.com | a            | K     | a                    | a    | a      | RejectedPoem3 | Rejected | sunny    |
+  | teacher_name     | county | email   | student_name | grade | student_teacher_name | poem |school  | title         | status   |
+  | a                | a      | a@a.com | a            | K     | a                    | a    | a      | PendingPoem1  | Pending  |
+  | Ronald Alexander | a      | a@a.com | a            | K     | a                    | po   | b      | ApprovedPoem1 | Approved |
+  | a                | a      | a@a.com | a            | K     | a                    | a    | a      | RejectedPoem1 | Rejected |
+  | a                | a      | a@a.com | a            | K     | a                    | a    | a      | PendingPoem2  | Pending  |
+  | Michelle Bitting | a      | a@a.com | a            | K     | a                    | ta   | a      | ApprovedPoem2 | Approved |
+  | a                | a      | a@a.com | a            | K     | a                    | a    | a      | RejectedPoem2 | Rejected |
+  | a                | a      | a@a.com | a            | K     | a                    | a    | a      | PendingPoem3  | Pending  |
+  | a                | a      | a@a.com | a            | K     | a                    | to   | a      | ApprovedPoem3 | Approved |
+  | a                | a      | a@a.com | a            | K     | a                    | a    | a      | RejectedPoem3 | Rejected |
   Given I am on the home page
 
 Scenario: I am viewing all poems on the gallery
   Then I should see "Fresh poems from our students across California"
   Then I should see "Back to California Poets"
+  # Then I should see "Donate"
   Then I should see "ApprovedPoem1"
   And I should see "ApprovedPoem2"
   And I should see "ApprovedPoem3"

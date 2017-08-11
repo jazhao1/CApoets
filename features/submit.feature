@@ -44,18 +44,16 @@ And I fill in "Teacher Name" with "Sample Teacher Name"
 And I fill in "School" with "Sample School"
 And I select "County" with "Butte"
 And I fill in "Poem Title" with "Sample title"
-And I fill in "Create Poem Tags" with "Sunny, Summer"
 And I fill in "Poem" with "Sample Poem"
 And I attach "poem_button" with "features/t.txt"
 And I attach "release_button" with "features/t.txt"
 When I press "Submit the poem"
-# Then I should see "Please fill in Missing Fields."
-# And  "tina@cpits.org" should receive an email
-# Then I should see "Poem was successfully submitted!"
-# When I press "Submit another poem"
-# Then I should be on new poem
+Then I should see "Poem was successfully submitted."
+And  "tina@cpits.org" should receive an email
+When I press "Submit another poem"
+Then I should be on new poem
 
-# Scenario: Tina receives an email with correct contents
-# When "tina@cpits.org" opens the email
-# Then they should see the email delivered from "CApoets Submission <noreply@cpits.org>"
-# And they should see "A New Poem Has Been Submitted" in the email subject
+Scenario: Tina receives an email with correct contents
+When "tina@cpits.org" opens the email
+Then they should see the email delivered from "CApoets Submission <noreply@cpits.org>"
+And they should see "A New Poem Has Been Submitted" in the email subject
